@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section -->
+  <div align="center" bgcolor="#1565C0" style="background-color:#1565C0; color:white; padding:10px;">
+    <h1>My Website - <span>Simple Calculator</span></h1>
+  </div>
+  <!-- Content Section -->
+  
+  <div>
+    <!-- Contact Form -->
+    
+    <h2>Contact Form</h2>
+    <form action="">
+      Email:<input type="email" name="Useremail"required><br><br>
+
+Tarikh:<input type="date"name="Tarikh">
+<br><br>
+<div class="User satisfication level">
+    <label for="myRange">User satisfaction level:</label>
+  <input type="range" min="1" max="100" value="50" class="User satisfication level" id="myRange">
+</div>
+    
+
+      <input type="submit" value="Submit">
+    </form>
+ 
+    <!-- Inline Calculator -->
+  <div>
+    <h2>Simple Calculator</h2>
+    <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+      <input id="x" type="number" value="0"> 
+      <b> + </b>
+      <input id="y" type="number" value="0">
+      <b> = </b>
+      <output name="z" for="x y"></output>
+    </form>
+  </div>
+  <!-- Footer Section -->
+   <br><br><br><br><hr>
+  <footer>
+    <div>
+      <p>Contact us: 0123212345</p>
+      <p>&copy; 2025 My Website</p>
+    </div>
+  </footer>
+
+</body>
+</html>
