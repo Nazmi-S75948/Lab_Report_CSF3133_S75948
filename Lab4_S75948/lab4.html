@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Simple Webpage</title>
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #0c86ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    
+  nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #bcc2bc;
+}
+a:link {color: #FF0000;} /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color: #FF00FF;} /* mouse over link */
+a:active {color:#0000FF;} /* selected link */
+    
+    section {
+      padding: 20px;
+      background-color: rgb(168, 143, 255);
+      margin: 20px;
+      border-radius: 5px;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+ 
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form div {
+  margin-top: 8px;
+}
+
+form div input[type="radio"] {
+  margin-right: 5px;
+}
+    form input[type="submit"] {
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+form input[type="submit"]:hover {
+      background-color: #16a085;
+    }
+
+    
+    footer {
+      text-align: center;
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <header>
+    <h1>My Simple Webpage</h1>
+  </header>
+
+<nav>
+<ul>
+<li><a href="https://youtu.be/Ufz0tR3OTcQ?si=_0TMtCNXFnZg8op8">Boboiboy</a></li>
+<li><a href="https://youtu.be/zM78QaUshxE?si=cqKd9Y7yAT9JEkr4">upin Ipin</a></li>
+<li><a href="https://youtu.be/grmXRKLR9gE?si=Y4ONc1Q6KdxwrMcl">didi and friend</a></li>
+<li><a href="https://youtu.be/SU4LseGCPOk?si=4_1wva0KUU78h0Sd">Najwa Letih</a></11>
+</ul>
+</nav>
+
+ <Article>
+    <h2>About This Page</h2>
+    <p>This is a simple example of a webpage made with HTML and CSS.</p>
+ </Article>
+
+ 
+  <section id="media">
+    <h2>Watch This Video</h2>
+    <video controls>
+      <source src="upinipin.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+ <form>
+    <label>Name:</label>
+     <input type="text" placeholder="Enter your name">
+
+    <label>Email:</label>
+     <input type="email" placeholder="Enter your email">
+<label>Select your Gender:</label>
+<div>
+  
+  <label for="male">Male</label>
+<input type="radio" id="male" name="gender" value="Male">
+
+  <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="Female">
+</div>
+
+<label>What is your Favourite Hobby?</label>
+<div>
+  
+  <label for="hobby1">Badminton</label>
+<input type="checkbox" id="hobby1" name="hobby" value="Badminton">
+
+  <label for="hobby2">Futsal</label>
+    <input type="checkbox" id="hobby2" name="hobby" value="Futsal">
+</div>
+<input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Simple Webpage</p>
+  </footer>
+
+</body>
+</html>
