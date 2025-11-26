@@ -1,0 +1,215 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("bg11.jpeg"); /* body full background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+  /* Header */
+header {
+    background-color: #004680; 
+    width: 100%;
+    height: 100px;               
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* text kiri, logo kanan */
+    padding: 049 100px;            /* kurang padding supaya rapat */
+    color: white;
+}
+
+/* Logo & header text */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;                  /* jarak kecil antara teks & logo */
+}
+
+header h1 {
+    font-size: 32px;            
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Logo di kanan */
+header .logo img {
+    height: 120px;
+}
+
+/* Navigation Menu (dalam header kanan, optional) */
+nav ul {
+    display: flex;
+    gap: 15px;                  /* jarak antara link navigation */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: 700;
+}
+
+nav li a:hover {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+/* Navigation Menu */
+ ul {
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow: hidden;
+            background-color: #333
+        }
+
+        li {
+           float:Right;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover*/
+        li a:hover{
+            background-color: #111;
+            
+        }
+/*main section */
+section {
+    padding: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2,
+section h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* TABLE*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+table th {
+    background-color: #004680;
+    color: white;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+/* CARD ADMISSION */
+.admission-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.07);
+}
+
+.card:hover .hover-box {
+    opacity: 1;
+}
+
+.btn {
+    background: #6a4bc4;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    background: #2c2c2c;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
