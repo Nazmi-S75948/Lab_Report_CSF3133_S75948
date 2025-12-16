@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Sidebar */
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background: #111;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidenav a:hover {
+    background: #e76b6b;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('travel4.jpg') center/cover no-repeat;
+    margin-left: 150px;
+    position: relative;
+}
+
+/* Hero Overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box inside Hero Overlay */
+.login-box {
+    background: rgba(173, 153, 153, 0.85); 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.login-box input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #45a049;
+}
+
+
+/* About Me */
+.profile {
+    margin-left: 150px;
+    padding: 50px;
+}
+
+.card {
+    width: 250px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Blog Section */
+.form-section {
+    background: url('log.jpg') center/cover no-repeat;
+    padding: 100px;
+    margin-left: 150px;
+}
+
+.form-box {
+    background: rgba(172, 172, 172, 0.9);
+    padding: 20px;
+    max-width: 300px;
+}
+
+.form-box input,
+.form-box button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+/* Slideshow Gallery */
+.slideshow-container {
+    margin-left: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    width: 300px;  /* gambar kecil */
+    border-radius: 10px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* Single Progress Bar for slideshow */
+.progress-container {
+    width: 300px;
+    height: 30px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    border-radius: 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Contact Section */
+.collapsible-section {
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons (for contact toggle) */
+button {
+    padding: 10px 20px;
